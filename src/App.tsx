@@ -8,6 +8,8 @@ const App: FC = () => {
     <div style={{ display: "flex", justifyContent: "center" }}>
       <div>
         <DatePicker
+          dateFormat="yyyy/MM/dd hh:mm"
+          showTimeSelect
           selected={startDate}
           onChange={(date: Date) => setStartDate(date)}
         />
