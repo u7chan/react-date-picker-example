@@ -20,7 +20,7 @@ const App: FC = () => {
       name: data.name ?? "",
       inputDate: data.inputDate.toISOString(),
     }
-    console.log("#sendData", sendData)
+    alert(JSON.stringify(sendData, null, 2))
   }
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
