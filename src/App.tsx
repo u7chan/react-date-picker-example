@@ -41,7 +41,7 @@ const App: FC = () => {
           rules={{ required: true }}
           render={({ field }) => (
             <DatePicker
-              dateFormat="yyyy/MM/dd hh:mm"
+              dateFormat="yyyy/MM/dd HH:mm"
               showTimeSelect
               selected={field.value}
               onChange={(date) => field.onChange(date)}
